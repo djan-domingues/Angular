@@ -5,6 +5,7 @@ export class UserLogin {
     public tipo: string;
     public senha: string;
     public token: string;
+    public id: number;
 
     
 }
