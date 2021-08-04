@@ -9,9 +9,13 @@
             </div>
             <div class="row d-flex justify-content-center mt-3 mb-5">
                 <div class="col-md-6">
-                    <button class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#novaPostagem">
-                        Nova Postagem
-                    </button>
+                    <button
+                    class="btn btn-light me-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#novaPostagem"
+                  >
+                    Nova Postagem
+                  </button>
                     <a href="#postagens" class="btn btn-outline-light">Ver Postagens</a>
                 </div>
             </div>
@@ -21,6 +25,7 @@
         </div>
     </div>
 </div>
+
 
 <div class="container mb-5 mt-5" id="postagens">
     <nav>
@@ -57,40 +62,72 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id= "TituloModalCentralizado">Nova Postagem</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-
-                <div class="form-group">
-                    <label for="titulo">Título</label>
-                    <input type="text" class="form-control" id="titulo" placeholder="Digite o título">
-                </div>
-
-                <div class="form-group">
-                    <label for="texto">Texto</label>
-                    <textarea class="form-control" name="texto" id="texto" rows="3"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="texto">Escolha um tema ou <a routerLink='/tema' >cadastre um novo </a>: </label>
-                    <select name="tema" id="tema" class="form-control">
-                        <option value="">Temas</option>
-                    </select>
-                </div>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-success"
-                    data-dismiss="modal">Publicar</button>
-            </div>
+<div
+  class="modal fade"
+  id="novaPostagem"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nova postagem</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="titulo">Título</label>
+          <input
+            type="text"
+            class="form-control"
+            id="titulo"
+            placeholder="Digite o título"
+          />
         </div>
+
+        <div class="form-group">
+          <label for="texto">Texto</label>
+          <textarea
+            name="texto"
+            id="texto"
+            class="form-control"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="tema"
+            >Escolha um tema ou
+            <a routerLink="/tema" data-bs-dismiss="modal">cadastre um novo</a
+            >:</label
+          >
+          <select
+            name="tema"
+            id="tema"
+            class="form-control"
+          >
+            
+          </select>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+          Cancelar
+        </button>
+        <button
+          type="button"
+          class="btn btn-success"
+          data-bs-dismiss="modal"
+        >
+          Publicar
+        </button>
+      </div>
     </div>
+  </div>
 </div>
