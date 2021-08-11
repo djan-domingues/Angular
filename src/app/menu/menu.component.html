@@ -12,7 +12,7 @@
             <p class="m-0 fw-bold">Olá, {{nome}}</p>
           </li>
           <li class="nav-item ps-3 d-flex fs-3 align-items-center text-white">
-            <a href=""><i class="fa fa-pencil-square-o text-white" aria-hidden="true"></i></a>
+            <a [routerLink]="['/user-edit', id]"><i class="fa fa-pencil-square-o text-white" aria-hidden="true"></i></a>
             
           </li>
         </ul>
